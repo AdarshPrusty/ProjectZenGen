@@ -1,24 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <router-view/>
+  </div>  
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(https://tinyurl.com/s867htn);
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+
+  overflow: hidden;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Staatliches", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
